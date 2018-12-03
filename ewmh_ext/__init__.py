@@ -2,14 +2,26 @@
 
 from ewmh import *
 
-def getWmName(self, win):
-    """
-    Get the property _NET_WM_NAME for the given window as a string.
+class EWMH_:
 
-    :param win: the window object
-    :return: str
-    """
-    return self._getProperty('_NET_WM_NAME', win).decode()
+    def getWmName(self, win):
+        """
+        Get the property _NET_WM_NAME for the given window as a string.
 
-EWMH.getWmName = getWmName
+        :param win: the window object
+        :return: str
+        """
+        return self._getProperty('_NET_WM_NAME', win).decode()
+
+    def getFrameExtents(self, win):
+        """
+        Get the property _NET_FRAME_EXTENTS for the given window.
+
+        :param win: the window object
+        :return: [left, right, top, bottom]
+        """
+        return self._getProperty('_NET_FRAME_EXTENTS', win)
+
+EWMH.getWmName = EWMH_.getWmName
+EWMH.getFrameExtents = EWMH_.getFrameExtents
 
