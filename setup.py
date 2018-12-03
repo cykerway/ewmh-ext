@@ -49,7 +49,7 @@ setup(
     ##
     ##  <https://packaging.python.org/en/latest/single_source_version.html>
     ##
-    version='1.0.0',
+    version='1.0.1',
 
     ##  project homepage;
     ##
@@ -81,7 +81,7 @@ setup(
     ##
     ##  <https://packaging.python.org/specifications/core-metadata/#summary>
     ##
-    description='a sample project;',
+    description='ewmh ext;',
 
     ##  a longer description shown on project homepage on pypi;
     ##
@@ -140,7 +140,7 @@ setup(
     ##
     ##  these keywords will appear on the project page;
     ##
-    keywords='sample setuptools development',
+    keywords='ewmh',
 
     ##  package data;
     ##
@@ -149,7 +149,7 @@ setup(
     ##  installed; the path names are interpreted relative to the package dir;
     ##
     package_data={
-        'sample': ['*.bin'],
+#        'sample': ['*.bin'],
     },
 
     ##  additional data files;
@@ -163,7 +163,7 @@ setup(
     ##  see <https://docs.python.org/3/distutils/setupscript.html#installing-additional-files>;
     ##
     data_files=[
-        ('data_files', ['data/data0.bin', 'data/data1.bin']),
+#        ('data_files', ['data/data0.bin', 'data/data1.bin']),
     ],
 
     ##  package dependencies;
@@ -172,8 +172,8 @@ setup(
     ##  will be installed by pip when this project is installed;
     ##
     install_requires=[
-        'numpy',
-        'scipy',
+#        'numpy',
+#        'scipy',
     ],
 
     ##  extra package dependencies;
@@ -188,8 +188,8 @@ setup(
     ##  see <https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies>
     ##
     extras_require={
-        'dev': ['check-manifest'],
-        'test': ['coverage'],
+#        'dev': ['check-manifest'],
+#        'test': ['coverage'],
     },
 
     ##  to create executable scripts, use entry points:
@@ -201,12 +201,12 @@ setup(
     ##  script `sample-gui` which executes the `main` function in package
     ##  `sample.gui`;
     entry_points={
-        'console_scripts': [
-            'sample-cli=sample.cli:main',
-        ],
-        'gui_scripts': [
-            'sample-gui=sample.gui:main',
-        ],
+#        'console_scripts': [
+#            'sample-cli=sample.cli:main',
+#        ],
+#        'gui_scripts': [
+#            'sample-gui=sample.gui:main',
+#        ],
     },
 
     ##  additional urls that are relevant to this project;
@@ -222,8 +222,8 @@ setup(
     ##
     project_urls={
         'Bug Reports': 'https://github.com/cykerway/ewmh-ext/issues',
-        'Funding': 'https://donate.pypi.org',
-        'Say Thanks!': 'http://saythanks.io/to/example',
+#        'Funding': 'https://donate.pypi.org',
+#        'Say Thanks!': 'http://saythanks.io/to/example',
         'Source': 'https://github.com/cykerway/ewmh-ext/',
     },
 )
